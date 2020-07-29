@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+code-server --install-extension lawrencegrant.cql
+code-server --install-extension kdcro101.vscode-cassandra
+
+
+code-server .  --auth none &

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Starting cassandra"
+
+cd $CASSANDRA_HOME && \
+nohup  cassandra &> ~/logs/cassandra-$CASSANDRA_VERSION.log &
+
