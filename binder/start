@@ -7,8 +7,7 @@ chmod +x ~/binder/start.cassandra
 chmod +x ~/binder/start.vscode 
 
 # starting mongodb
-~/binder/start.cassandra   &
-
+# ~/binder/start.cassandra   &
 
 # starting adminmongo in parallel
 ~/binder/start.vscode   &
