@@ -11,13 +11,7 @@
         "**/.npm": true,
         "**/.gitignore": true,
         "**/.yarn": true,
+        "**/.vscode": true,
         "**/jupyter_vscode_proxy.egg-info": true
-    },
-    "macros": {
-        "execCurLn": [
-            "expandLineSelection",
-            "workbench.action.terminal.runSelectedText",
-            "cancelSelection"
-        ]
-    }    
+    } 
 }

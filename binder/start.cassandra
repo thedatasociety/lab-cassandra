@@ -2,6 +2,8 @@
 
 echo "Starting cassandra"
 
-cd $CASSANDRA_HOME && \
-nohup  cassandra &> ~/logs/cassandra-$CASSANDRA_VERSION.log &
+cd $CASSANDRA_HOME 
+mkdir logs
+
+nohup  ./bin/cassandra -R &> ~/logs/cassandra-$CASSANDRA_VERSION.log &
 

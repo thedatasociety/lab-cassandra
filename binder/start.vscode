@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir /home/$USER/.config/Code/User
+cp ~/.vscode/keybindings.json /home/$USER/.config/Code/User/
 
 code-server --install-extension lawrencegrant.cql
 code-server --install-extension kdcro101.vscode-cassandra
