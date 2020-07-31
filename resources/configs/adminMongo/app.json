@@ -1,9 +1,0 @@
-{
-    "app": {
-        "host": "127.0.0.1",
-        "port": 4321,
-        "locale": "en",
-        "context": "proxy/4321",
-        "monitoring": false
-    }
-}

@@ -14,7 +14,7 @@ DESC KEYSPACE system;
 CREATE KEYSPACE test_matheus WITH REPLICATION = { 'class' : 'SimpleStrategy' , 'replication_factor' : 1 };
 
 # usando keyspace
-USE  test_matheus
+USE  test_matheus;
 
 #criando primeira tabela 
 CREATE TABLE store (
@@ -57,7 +57,7 @@ CREATE TABLE produto (
   name text,
   price float,
   category text,
-  store_id cnpj,
+  store_id text,
   PRIMARY KEY ((id), barcode)
   );
 

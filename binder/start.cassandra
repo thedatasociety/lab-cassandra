@@ -4,6 +4,16 @@ echo "Starting cassandra"
 
 cd $CASSANDRA_HOME 
 mkdir logs
+mkdir data
 
-nohup  ./bin/cassandra -R &> ~/logs/cassandra-$CASSANDRA_VERSION.log &
+#solving the nightmare
+#setting min (-Xms) and max (-Xmx) heap sizes to
+echo "-Xms1G" >> $CASSANDRA_HOME/conf/jvm.options
+echo "-Xmx2G" >> $CASSANDRA_HOME/conf/jvm.options
+
+#had to edit the script to avoid user id problems. See the commented lines
+cp ~/resources/configs/cassandra/cassandra $CASSANDRA_HOME/bin/
+chmod +x  $CASSANDRA_HOME/bin/cassandra
+
+nohup  ./bin/cassandra  &> ~/logs/cassandra-$CASSANDRA_VERSION.log &
 
