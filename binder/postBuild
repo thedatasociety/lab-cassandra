@@ -39,7 +39,7 @@ cd    ~/resources/local
 #             cassandra installation commands                   #
 ###############################################################
 
-export CASSANDRA_VERSION=3.11.7
+export CASSANDRA_VERSION=3.11.11
 echo "export CASSANDRA_VERSION=${CASSANDRA_VERSION}" >> ~/.bashrc
 echo "export CASSANDRA_VERSION=${CASSANDRA_VERSION}" >> ~/.profile
 
@@ -48,7 +48,7 @@ echo "export CASSANDRA_HOME=${CASSANDRA_HOME}"       >> ~/.bashrc
 echo "export CASSANDRA_HOME=${CASSANDRA_HOME}"       >> ~/.profile
 
       
-wget -q http://ftp.unicamp.br/pub/apache/cassandra/${CASSANDRA_VERSION}/apache-cassandra-${CASSANDRA_VERSION}-bin.tar.gz
+wget  http://ftp.unicamp.br/pub/apache/cassandra/${CASSANDRA_VERSION}/apache-cassandra-${CASSANDRA_VERSION}-bin.tar.gz
 tar xzf apache-cassandra-${CASSANDRA_VERSION}-bin.tar.gz
 rm      apache-cassandra-${CASSANDRA_VERSION}-bin.tar.gz
 
@@ -72,7 +72,7 @@ echo "export CODE_SERVER_HOME=${CODE_SERVER_HOME}"       >> ~/.profile
 
 # Download and install VSCode server
 # wget -q -O code-server.tar.gz https://github.com/cdr/code-server/releases/download/$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-x86_64.tar.gz                            
-wget -O code-server.tar.gz https://github.com/cdr/code-server/releases/download/v$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-amd64.tar.gz                            
+wget -q -O code-server.tar.gz https://github.com/cdr/code-server/releases/download/v$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-amd64.tar.gz                            
 tar xzf code-server.tar.gz
 # mv code-server-${CODE_SERVER_VERSION}-linux-x86_64 code-server-$CODE_SERVER_VERSION
 mv code-server-$CODE_SERVER_VERSION-linux-amd64 code-server-$CODE_SERVER_VERSION

@@ -14,10 +14,16 @@ cp ~/.vscode/* /home/$USER/.local/share/code-server/User/
 
 code-server --force --install-extension 'ms-toolsai.jupyter' && sleep 1
 code-server --force --install-extension 'pkief.material-icon-theme' && sleep 1
+code-server --force --install-extension 'lawrencegrant.cql' && sleep 1
+code-server --force --install-extension 'kdcro101.vscode-cassandra' && sleep 1
+code-server --force --install-extension 'jordanhury.sqltools-cassandra' && sleep 1
+
 
 # open extension gallery
 export SERVICE_URL=https://open-vsx.org/vscode/gallery
 export ITEM_URL=https://open-vsx.org/vscode/item
+code-server --install-extension 'mtxr.sqltools' && sleep 1
+code-server --install-extension 'jordanhury.sqltools-cassandra' && sleep 1
 code-server --install-extension 'lawrencegrant.cql' && sleep 1
 code-server --install-extension 'kdcro101.vscode-cassandra' && sleep 1
                                 
