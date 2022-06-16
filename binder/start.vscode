@@ -1,14 +1,18 @@
 #!/bin/bash
 
-mkdir -p /home/$USER/.config/Code/User
-cp ~/.vscode/keybindings.json /home/$USER/.config/Code/User/
 
-mkdir -p /home/$USER/.config/code-server/User
-cp ~/.vscode/keybindings.json /home/$USER/.config/code-server/User/
-
+###############################################
+# Copying vscode config files
+###############################################
 mkdir -p /home/$USER/.local/share/code-server/User/
-cp ~/.vscode/keybindings.json /home/$USER/.local/share/code-server/User/
+cp ~/.vscode/* /home/$USER/.local/share/code-server/User/
 
+
+###############################################
+# Installing vs code extensions
+###############################################
+
+<<<<<<< HEAD
 
 ###############################################
 # Installing vs code extensions
@@ -27,6 +31,23 @@ export ITEM_URL=https://open-vsx.org/vscode/item
 cp ~/resources/configs/vscode/.cassandraWorkbench.jsonc ~/
 code-server --install-extension ./resources/vscode/kdcro101.vscode-cassandra-0.3.6.vsix  && sleep 1
 
+=======
+code-server --force --install-extension 'ms-toolsai.jupyter' && sleep 1
+code-server --force --install-extension 'pkief.material-icon-theme' && sleep 1
+code-server --force --install-extension 'lawrencegrant.cql' && sleep 1
+code-server --force --install-extension 'kdcro101.vscode-cassandra' && sleep 1
+code-server --force --install-extension 'jordanhury.sqltools-cassandra' && sleep 1
+
+
+# open extension gallery
+export SERVICE_URL=https://open-vsx.org/vscode/gallery
+export ITEM_URL=https://open-vsx.org/vscode/item
+code-server --install-extension 'mtxr.sqltools' && sleep 1
+code-server --install-extension 'jordanhury.sqltools-cassandra' && sleep 1
+code-server --install-extension 'lawrencegrant.cql' && sleep 1
+code-server --install-extension 'kdcro101.vscode-cassandra' && sleep 1
+                                
+>>>>>>> 8a9f7df0fe77d3035a5b67204eddd44ee3ddee8f
 ###############################################
 # Starting code-server
 ###############################################
