@@ -13,5 +13,5 @@
         "**/.yarn": true,
         "**/.vscode": true,
         "**/jupyter_vscode_proxy.egg-info": true
-    } 
+    }
 }

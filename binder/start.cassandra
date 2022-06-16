@@ -17,3 +17,12 @@ chmod +x  $CASSANDRA_HOME/bin/cassandra
 
 nohup  ./bin/cassandra  &> ~/logs/cassandra-$CASSANDRA_VERSION.log &
 
+
+while ! cqlsh -e 'describe cluster' ; do
+    echo "Waiting for Cassandra cluster"
+    sleep 1
+done
+
+cd ~/resources/datasets/docs-cycling-examples/ && cqlsh --execute "SOURCE 'setup-cycling.cql';" &
+
+cd ~/

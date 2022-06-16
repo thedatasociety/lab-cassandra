@@ -1,0 +1,7 @@
+[
+    // AllowAllAuthenticator
+    {
+        "name": "Cluster Local (The Data Society)",
+        "contactPoints": ["127.0.0.1"]
+    }
+]

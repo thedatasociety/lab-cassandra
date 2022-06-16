@@ -9,8 +9,25 @@ cp ~/.vscode/keybindings.json /home/$USER/.config/code-server/User/
 mkdir -p /home/$USER/.local/share/code-server/User/
 cp ~/.vscode/keybindings.json /home/$USER/.local/share/code-server/User/
 
-code-server --install-extension lawrencegrant.cql
-code-server --install-extension kdcro101.vscode-cassandra
 
-code-server .  --auth none &
+###############################################
+# Installing vs code extensions
+###############################################
 
+code-server --force --install-extension 'ms-toolsai.jupyter' && sleep 1
+code-server --force --install-extension 'pkief.material-icon-theme' && sleep 1
+
+# open extension gallery
+export SERVICE_URL=https://open-vsx.org/vscode/gallery
+export ITEM_URL=https://open-vsx.org/vscode/item
+# code-server --install-extension 'lawrencegrant.cql' && sleep 1
+# code-server --install-extension 'kdcro101.vscode-cassandra' && sleep 1
+# code-server --install-extension 'mtxr.sqltools' && sleep 1
+# code-server --install-extension 'jordanHury.sqltools-cassandra' && sleep 1
+cp ~/resources/configs/vscode/.cassandraWorkbench.jsonc ~/
+code-server --install-extension ./resources/vscode/kdcro101.vscode-cassandra-0.3.6.vsix  && sleep 1
+
+###############################################
+# Starting code-server
+###############################################
+code-server . --auth none &

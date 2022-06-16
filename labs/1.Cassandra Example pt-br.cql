@@ -3,9 +3,12 @@
 -- abrir interface de consulta
 cqlsh
 
+-- Documentação dos comandos administrativos https://docs.datastax.com/en/cql-oss/3.3/cql/cql_reference/cqlshCommandsTOC.html
+
+-- Documentacão CQL: https://docs.datastax.com/en/cql-oss/3.3/cql/cql_reference/cqlCommandsTOC.html
+
 -- Descrevendo keyspaces (bancos de dados) 
 DESC KEYSPACES;
-
 
 DESC KEYSPACE system;
 
