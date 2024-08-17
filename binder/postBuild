@@ -6,7 +6,7 @@
 
 # Building everything up
 echo "Building everything up (jupyter lab build)"
-# jupyter lab build 
+jupyter lab build 
 
 ###############################################################
 #             moving to a local installation folder           #
