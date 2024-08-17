@@ -26,3 +26,6 @@ done
 cd ~/resources/datasets/docs-cycling-examples/ && cqlsh --execute "SOURCE 'setup-cycling.cql';" &
 
 cd ~/
+
+echo "Cassandra is ready!"
+touch ~/ready

@@ -19,7 +19,7 @@ cd    ~/resources/local
 #             cassandra installation commands                   #
 ###############################################################
 
-export CASSANDRA_VERSION=4.1.4
+export CASSANDRA_VERSION=3.11.11
 echo "export CASSANDRA_VERSION=${CASSANDRA_VERSION}" >> ~/.bashrc
 echo "export CASSANDRA_VERSION=${CASSANDRA_VERSION}" >> ~/.profile
 
