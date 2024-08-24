@@ -19,7 +19,7 @@ cd    ~/resources/local
 #             cassandra installation commands                   #
 ###############################################################
 
-export CASSANDRA_VERSION=3.11.11
+export CASSANDRA_VERSION=3.11.17
 echo "export CASSANDRA_VERSION=${CASSANDRA_VERSION}" >> ~/.bashrc
 echo "export CASSANDRA_VERSION=${CASSANDRA_VERSION}" >> ~/.profile
 
@@ -27,7 +27,9 @@ export CASSANDRA_HOME=$(pwd)/apache-cassandra-${CASSANDRA_VERSION}
 echo "export CASSANDRA_HOME=${CASSANDRA_HOME}"       >> ~/.bashrc
 echo "export CASSANDRA_HOME=${CASSANDRA_HOME}"       >> ~/.profile
 
-wget -q https://archive.apache.org/dist/cassandra/${CASSANDRA_VERSION}/apache-cassandra-${CASSANDRA_VERSION}-bin.tar.gz
+  
+wget -q https://dlcdn.apache.org/cassandra/${CASSANDRA_VERSION}/apache-cassandra-${CASSANDRA_VERSION}-bin.tar.gz
+# wget -q https://archive.apache.org/dist/cassandra/${CASSANDRA_VERSION}/apache-cassandra-${CASSANDRA_VERSION}-bin.tar.gz
 
 tar xzf apache-cassandra-${CASSANDRA_VERSION}-bin.tar.gz
 rm      apache-cassandra-${CASSANDRA_VERSION}-bin.tar.gz
