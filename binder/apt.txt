@@ -4,8 +4,7 @@ curl
 wget
 net-tools
 
-
 #cassandra related
-openjdk-8-jdk
+openjdk-17-jdk
 build-essential 
 gdb
