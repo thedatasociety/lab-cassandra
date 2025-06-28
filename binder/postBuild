@@ -38,12 +38,6 @@ rm      apache-cassandra-${CASSANDRA_VERSION}-bin.tar.gz
 echo "export PATH=\$PATH:\$CASSANDRA_HOME/bin"  >> ~/.bashrc
 echo "export PATH=\$PATH:\$CASSANDRA_HOME/bin"  >> ~/.profile
 
-# setting heap size limit 
-# echo 'export JAVA_OPTS="-Xms512m -Xmx1G"'       >> ~/.bashrc
-# echo 'export JAVA_OPTS="-Xms512m -Xmx1G"'       >> ~/.profile
-# echo 'export JAVA_OPTS="-Xms512m -Xmx1G"'       >> /etc/environment
-
-
 ###############################################################
 #             vscode server installation                      #
 ###############################################################
