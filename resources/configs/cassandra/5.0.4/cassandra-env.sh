@@ -115,7 +115,7 @@ calculate_heap_sizes
 # When using CMS both MAX_HEAP_SIZE and HEAP_NEWSIZE should be either set
 # or not (if you set one, set the other).
 
-MAX_HEAP_SIZE="2G"
+MAX_HEAP_SIZE="1G"
 HEAP_NEWSIZE="1G"
 MAX_DIRECT_MEMORY_SIZE="1G"
 
